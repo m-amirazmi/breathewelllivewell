@@ -1,3 +1,12 @@
 {
-  "welcome": "Welcome to my app 2"
+	"header": {
+		"our_programs": {
+			"title": "Our Programs",
+			"forum_breathe_well_live_well": "'Breathe Well, Live Well' Forum",
+			"health_exhibitions": "Health Exhibitions",
+			"basic_life_support": "Basic Life Support (BLS)"
+		},
+		"main_issue": "Main Issue?",
+		"announcements": "Announcements"
+	}
 }
