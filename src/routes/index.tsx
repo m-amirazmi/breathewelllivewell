@@ -1,4 +1,4 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { Link, createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/')({
   component: App,
@@ -7,8 +7,9 @@ export const Route = createFileRoute('/')({
 function App() {
   return (
     <div>
-      {/* Header */}
-      {/* Hero Section */}
+      <a target='_blank' href='https://forms.gle/GCh7CD5j8cgNxscu9' rel="noreferrer">
+        <img src='/assets/images/hero.webp' alt='karnival_kesihatan_2025' />
+      </a>
       {/* Content Header */}
       {/* Content Body */}
       {/*  */}
