@@ -19,13 +19,13 @@ export default function Header() {
     <header className="bg-[#E9DFD6] text-black ">
       <div className="px-4 py-2">
         <div className="relative container mx-auto flex gap-2 justify-between items-center">
-          <div>
+          <Link to="/">
             <img
               src="/assets/images/logo.png"
               className="h-16 w-16 inline-block"
               alt="Logo"
             />
-          </div>
+          </Link>
           <nav className=" gap-8 items-center hidden md:flex">
             <Link to="/isu-utama">{t("header.main_issue")}</Link>
             <DropdownMenu>
