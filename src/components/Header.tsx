@@ -4,29 +4,11 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "./ui/button";
 import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "./ui/drawer";
-import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "./ui/sheet";
 
 export default function Header() {
   const { t } = useTranslation();
@@ -45,7 +27,7 @@ export default function Header() {
             />
           </div>
           <nav className=" gap-8 items-center hidden md:flex">
-            <Link to="/">{t("header.main_issue")}</Link>
+            <Link to="/isu-utama">{t("header.main_issue")}</Link>
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1">
                 <span>{t("header.our_programs.title")}</span>
@@ -53,23 +35,23 @@ export default function Header() {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>
-                  <Link to="/">
+                  <Link to="/program-kami/forum-breathe-well-live-well">
                     {t("header.our_programs.forum_breathe_well_live_well")}
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link to="/">
+                  <Link to="/program-kami/pameran-kesihatan">
                     {t("header.our_programs.health_exhibitions")}
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link to="/">
+                  <Link to="/program-kami/bls">
                     {t("header.our_programs.basic_life_support")}
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <Link to="/">{t("header.announcements")}</Link>
+            <Link to="/hebahan">{t("header.announcements")}</Link>
           </nav>
 
           <Button
@@ -85,7 +67,7 @@ export default function Header() {
       {openMobileMenu && (
         <div className="absolute md:hidden bg-neutral-700 text-white w-full h-fit">
           <div className="flex flex-col items-center gap-4 py-4 group:border-b">
-            <Link to="/">{t("header.main_issue")}</Link>
+            <Link to="/isu-utama">{t("header.main_issue")}</Link>
             {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
             <button
               className="flex items-center gap-1"
@@ -98,23 +80,23 @@ export default function Header() {
             {openMobileDropdown && (
               <>
                 <div>
-                  <Link to="/">
+                  <Link to="/program-kami/forum-breathe-well-live-well">
                     {t("header.our_programs.forum_breathe_well_live_well")}
                   </Link>
                 </div>
                 <div>
-                  <Link to="/">
+                  <Link to="/program-kami/pameran-kesihatan">
                     {t("header.our_programs.health_exhibitions")}
                   </Link>
                 </div>
                 <div>
-                  <Link to="/">
+                  <Link to="/program-kami/bls">
                     {t("header.our_programs.basic_life_support")}
                   </Link>
                 </div>
               </>
             )}
-            <Link to="/">{t("header.announcements")}</Link>
+            <Link to="/hebahan">{t("header.announcements")}</Link>
           </div>
         </div>
       )}

@@ -10,33 +10,117 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProgramKamiIndexRouteImport } from './routes/program-kami/index'
+import { Route as IsuUtamaIndexRouteImport } from './routes/isu-utama/index'
+import { Route as HebahanIndexRouteImport } from './routes/hebahan/index'
+import { Route as ProgramKamiPameranKesihatanIndexRouteImport } from './routes/program-kami/pameran-kesihatan/index'
+import { Route as ProgramKamiForumBreatheWellLiveWellIndexRouteImport } from './routes/program-kami/forum-breathe-well-live-well/index'
+import { Route as ProgramKamiBlsIndexRouteImport } from './routes/program-kami/bls/index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProgramKamiIndexRoute = ProgramKamiIndexRouteImport.update({
+  id: '/program-kami/',
+  path: '/program-kami/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IsuUtamaIndexRoute = IsuUtamaIndexRouteImport.update({
+  id: '/isu-utama/',
+  path: '/isu-utama/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HebahanIndexRoute = HebahanIndexRouteImport.update({
+  id: '/hebahan/',
+  path: '/hebahan/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgramKamiPameranKesihatanIndexRoute =
+  ProgramKamiPameranKesihatanIndexRouteImport.update({
+    id: '/program-kami/pameran-kesihatan/',
+    path: '/program-kami/pameran-kesihatan/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ProgramKamiForumBreatheWellLiveWellIndexRoute =
+  ProgramKamiForumBreatheWellLiveWellIndexRouteImport.update({
+    id: '/program-kami/forum-breathe-well-live-well/',
+    path: '/program-kami/forum-breathe-well-live-well/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ProgramKamiBlsIndexRoute = ProgramKamiBlsIndexRouteImport.update({
+  id: '/program-kami/bls/',
+  path: '/program-kami/bls/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/hebahan': typeof HebahanIndexRoute
+  '/isu-utama': typeof IsuUtamaIndexRoute
+  '/program-kami': typeof ProgramKamiIndexRoute
+  '/program-kami/bls': typeof ProgramKamiBlsIndexRoute
+  '/program-kami/forum-breathe-well-live-well': typeof ProgramKamiForumBreatheWellLiveWellIndexRoute
+  '/program-kami/pameran-kesihatan': typeof ProgramKamiPameranKesihatanIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/hebahan': typeof HebahanIndexRoute
+  '/isu-utama': typeof IsuUtamaIndexRoute
+  '/program-kami': typeof ProgramKamiIndexRoute
+  '/program-kami/bls': typeof ProgramKamiBlsIndexRoute
+  '/program-kami/forum-breathe-well-live-well': typeof ProgramKamiForumBreatheWellLiveWellIndexRoute
+  '/program-kami/pameran-kesihatan': typeof ProgramKamiPameranKesihatanIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/hebahan/': typeof HebahanIndexRoute
+  '/isu-utama/': typeof IsuUtamaIndexRoute
+  '/program-kami/': typeof ProgramKamiIndexRoute
+  '/program-kami/bls/': typeof ProgramKamiBlsIndexRoute
+  '/program-kami/forum-breathe-well-live-well/': typeof ProgramKamiForumBreatheWellLiveWellIndexRoute
+  '/program-kami/pameran-kesihatan/': typeof ProgramKamiPameranKesihatanIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/hebahan'
+    | '/isu-utama'
+    | '/program-kami'
+    | '/program-kami/bls'
+    | '/program-kami/forum-breathe-well-live-well'
+    | '/program-kami/pameran-kesihatan'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/hebahan'
+    | '/isu-utama'
+    | '/program-kami'
+    | '/program-kami/bls'
+    | '/program-kami/forum-breathe-well-live-well'
+    | '/program-kami/pameran-kesihatan'
+  id:
+    | '__root__'
+    | '/'
+    | '/hebahan/'
+    | '/isu-utama/'
+    | '/program-kami/'
+    | '/program-kami/bls/'
+    | '/program-kami/forum-breathe-well-live-well/'
+    | '/program-kami/pameran-kesihatan/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  HebahanIndexRoute: typeof HebahanIndexRoute
+  IsuUtamaIndexRoute: typeof IsuUtamaIndexRoute
+  ProgramKamiIndexRoute: typeof ProgramKamiIndexRoute
+  ProgramKamiBlsIndexRoute: typeof ProgramKamiBlsIndexRoute
+  ProgramKamiForumBreatheWellLiveWellIndexRoute: typeof ProgramKamiForumBreatheWellLiveWellIndexRoute
+  ProgramKamiPameranKesihatanIndexRoute: typeof ProgramKamiPameranKesihatanIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +132,60 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/program-kami/': {
+      id: '/program-kami/'
+      path: '/program-kami'
+      fullPath: '/program-kami'
+      preLoaderRoute: typeof ProgramKamiIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/isu-utama/': {
+      id: '/isu-utama/'
+      path: '/isu-utama'
+      fullPath: '/isu-utama'
+      preLoaderRoute: typeof IsuUtamaIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hebahan/': {
+      id: '/hebahan/'
+      path: '/hebahan'
+      fullPath: '/hebahan'
+      preLoaderRoute: typeof HebahanIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/program-kami/pameran-kesihatan/': {
+      id: '/program-kami/pameran-kesihatan/'
+      path: '/program-kami/pameran-kesihatan'
+      fullPath: '/program-kami/pameran-kesihatan'
+      preLoaderRoute: typeof ProgramKamiPameranKesihatanIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/program-kami/forum-breathe-well-live-well/': {
+      id: '/program-kami/forum-breathe-well-live-well/'
+      path: '/program-kami/forum-breathe-well-live-well'
+      fullPath: '/program-kami/forum-breathe-well-live-well'
+      preLoaderRoute: typeof ProgramKamiForumBreatheWellLiveWellIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/program-kami/bls/': {
+      id: '/program-kami/bls/'
+      path: '/program-kami/bls'
+      fullPath: '/program-kami/bls'
+      preLoaderRoute: typeof ProgramKamiBlsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  HebahanIndexRoute: HebahanIndexRoute,
+  IsuUtamaIndexRoute: IsuUtamaIndexRoute,
+  ProgramKamiIndexRoute: ProgramKamiIndexRoute,
+  ProgramKamiBlsIndexRoute: ProgramKamiBlsIndexRoute,
+  ProgramKamiForumBreatheWellLiveWellIndexRoute:
+    ProgramKamiForumBreatheWellLiveWellIndexRoute,
+  ProgramKamiPameranKesihatanIndexRoute: ProgramKamiPameranKesihatanIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
