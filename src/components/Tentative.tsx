@@ -45,7 +45,7 @@ export default function Tentative() {
         />
         <div className="tab-content bg-base-100 py-4 md:p-10">
           <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
-            <table className="table">
+            <table className="table table-zebra">
               <thead>
                 <tr className="md:text-lg">
                   <th className="hidden md:block">
@@ -67,7 +67,7 @@ export default function Tentative() {
         />
         <div className="tab-content bg-base-100 py-4 md:p-10">
           <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
-            <table className="table">
+            <table className="table table-zebra">
               <thead>
                 <tr>
                   <th className="hidden md:block">

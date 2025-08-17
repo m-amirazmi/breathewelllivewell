@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="bg-base-100 shadow-sm sticky top-0 z-10">
       <div className="navbar container mx-auto px-4">
-        <div className="navbar-start w-7xl">
+        <div className="navbar-start">
           <Link to="/" className="w-16 md:w-20">
             <img src="/images/logo.webp" alt="logo" />
           </Link>
@@ -25,13 +25,12 @@ export default function Header() {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                {' '}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M4 6h16M4 12h8m-8 6h16"
-                />{' '}
+                />
               </svg>
             </div>
             <ul
@@ -70,11 +69,11 @@ export default function Header() {
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1 items-center gap-1">
-            <li>
+            <li className="text-lg">
               <Link to="/isu-utama">{content['header.isu_utama']}</Link>
             </li>
             <li>
-              <details>
+              <details className="text-lg">
                 <summary>{content['header.program_kami']}</summary>
                 <ul className="p-2 w-48">
                   <li>
@@ -102,7 +101,7 @@ export default function Header() {
             <li>
               <a
                 target="_blank"
-                className="btn btn-neutral"
+                className="btn btn-neutral btn-lg"
                 href="https://forms.gle/GCh7CD5j8cgNxscu9"
               >
                 {content['header.borang_soal_selidik_pra_program']}
