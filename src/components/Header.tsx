@@ -44,13 +44,13 @@ export default function Header() {
                 <a>{content['header.program_kami']}</a>
                 <ul className="p-2">
                   <li>
-                    <a href="#forum">
+                    <Link to="/" hash="#forum">
                       {
                         content[
                           'header.program_kami.forum_breathe_well_live_well'
                         ]
                       }
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <Link to="/program-kami/pameran-kesihatan">
@@ -77,13 +77,13 @@ export default function Header() {
                 <summary>{content['header.program_kami']}</summary>
                 <ul className="p-2 w-48">
                   <li>
-                    <a href="#forum">
+                    <Link to="/" hash="#forum">
                       {
                         content[
                           'header.program_kami.forum_breathe_well_live_well'
                         ]
                       }
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <Link to="/program-kami/pameran-kesihatan">
