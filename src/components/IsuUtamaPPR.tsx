@@ -21,7 +21,7 @@ const isuPPR = Object.values(content['isu_utama.isu_utama_ppr_bbh.items']).map(
 
 export default function IsuUtamaPPR() {
   return (
-    <div className="bg-accent/50">
+    <div className="bg-accent/20">
       <div className="container mx-auto px-4 pt-8 pb-8">
         <h2 className="text-xl md:text-3xl font-bold mb-4">
           {content['isu_utama.isu_utama_ppr_bbh']}
