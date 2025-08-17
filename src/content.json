@@ -93,5 +93,34 @@
     }
   },
   "hebahan.hebahan": "Hebahan",
-  "kolaborasi.kolaborasi": "Kolaborasi Bersama"
+  "kolaborasi.kolaborasi": "Kolaborasi Bersama",
+  "isu_utama.objektif_program": "Objektif Program",
+  "isu_utama.objektif_program.text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, illo aliquid aspernatur, itaque quo suscipit pariatur exercitationem quam asperiores voluptate ipsa excepturi velit eius. Doloribus, harum! Vel, blanditiis. Eius, eos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, illo aliquid aspernatur, itaque quo suscipit pariatur exercitationem quam asperiores voluptate ipsa excepturi velit eius. Doloribus, harum! Vel, blanditiis. Eius, eos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, illo aliquid aspernatur, itaque quo suscipit pariatur exercitationem quam asperiores voluptate ipsa excepturi velit eius. Doloribus, harum! Vel, blanditiis. Eius, eos?",
+  "isu_utama.isu_utama_ppr_bbh": "Isu Utama di PPR BBH",
+  "isu_utama.isu_utama_ppr_bbh.items": {
+    "vape_dalam_kalangan_remaja": {
+      "title": "Vape dalam kalangan remaja",
+      "statements": {
+        "one": "Saya ingatkan tu pen, rupanya vape.",
+        "two": "Setiap tingkat mesti ada putung rokok merata-rata.",
+        "three": "Pernah ada orang buang putung rokok sampai hampir depan pintu rumah saya.",
+        "four": "Ada yang umur 10 tahun pun dah hisap vape.",
+        "five": "Budak-budak dekat sini kumpul duit dan kongsi vape ramai-ramai."
+      }
+    },
+    "kualiti_udara": {
+      "title": "Kualiti udara dalam bangunan yang rendah",
+      "statements": {
+        "one": "Anak saya batuk-batuk kena bawa pergi klinik, Dr. cakap kulat dekat dinding rumah penyebab anak saya batuk.",
+        "two": "Dekat sini rumah rapat-rapat, jadi memang kurang pengudaraan."
+      }
+    },
+    "ncd": {
+      "title": "Beban tinggi Penyakit Tidak Berjangkit (PTB)",
+      "statements": {
+        "one": "Dekat sini saya dengar cerita memang ramai yang dapat stroke.",
+        "two": "Kebanyakan kat sini bekerja, bila balik dah penat jadi memang takde masa nak beriadah."
+      }
+    }
+  }
 }
