@@ -1,0 +1,95 @@
+{
+  "header.isu_utama": "Isu Utama?",
+  "header.program_kami": "Program Kami",
+  "header.program_kami.forum_breathe_well_live_well": "Forum 'Breathe Well, Live Well'",
+  "header.program_kami.pameran_kesihatan": "Pameran Kesihatan",
+  "header.program_kami.sesi_bantuan_hidup_asas": "Sesi Bantuan Hidup Asas (BLS)",
+  "header.borang_soal_selidik_pra_program": "Borang Soal Selidik Pra Program",
+  "tentatif_program.tentative_program": "Tentative Program",
+  "tentatif_program.tab.group_a": "Group A (10-59 Tahun)",
+  "tentatif_program.tab.group_b": "Group B (18 Tahun Keatas)",
+  "tentatif_program.tab.group_a.masa": "Masa",
+  "tentatif_program.tab.group_a.aktiviti": "Aktiviti",
+  "tentatif_program.tab.group_a.items": {
+    "daftar_peserta_ketibaan_vip": {
+      "masa": "7.30 pagi – 8.00 pagi",
+      "aktiviti": "Daftar peserta dan ketibaan VIP",
+      "items": {}
+    },
+    "senaman_zumba": {
+      "masa": "8.00 pagi – 8.30 pagi",
+      "aktiviti": "Senaman: Zumba",
+      "items": {}
+    },
+    "rehat_makan_pagi": {
+      "masa": "8.30 pagi – 8.45 pagi",
+      "aktiviti": "Rehat Makan Pagi",
+      "items": {}
+    },
+    "majlis_perasmian": {
+      "masa": "8.45 pagi – 9.15 pagi",
+      "aktiviti": "Majlis Perasmian",
+      "items": {
+        "bacaan_doa": "Bacaan doa oleh Izzrul Ameer",
+        "ucapan_pengarah_program": "Ucapan oleh Pengarah Program (Shahril Hafizee Bin Shafie)",
+        "ucapan_oleh_pengerusi_mpp_zon_10": "Ucapan oleh Pengerusi MPP Zon 10",
+        "ucapan_perasmian": "Ucapan perasmian oleh Prof. Madya Dr. Hazlyna (Timbalan Dekan Akademik)",
+        "gimik_perasmian": "Gimik perasmian: <b>Vote to not Vape</b>"
+      }
+    },
+    "forum_breathe_well_live_well": {
+      "masa": "9.15 pagi – 10.15 pagi",
+      "aktiviti": "Forum \"Breathe Well, Live Well\"",
+      "items": {
+        "disampaikan_oleh": "Disampaikan oleh <b>Prof. Dr. Munira Yasin</b> dan <b>Dr. Mohamad Ikhsan Selamat</b>",
+        "dikendalikan_oleh": "Dikendalikan oleh Mukhriz Razali"
+      }
+    },
+    "taklimat_pameran_peserta": {
+      "masa": "10.15 pagi – 10.30 pagi",
+      "aktiviti": "Taklimat pameran kepada peserta",
+      "items": {}
+    },
+    "pameran_pendidikan_kesihatan": {
+      "masa": "10.30 pagi – 1.00 petang",
+      "aktiviti": "Pameran Pendidikan Kesihatan",
+      "items": {
+        "booth_1": "Booth 1: <b>INDOOR AIR QUALITY (Kesihatan Udara, Tanggungjawab Bersama)</b>",
+        "booth_2": "Booth 2: <b>E-CIGARETTES AWARENESS (Satu Sedutan, Sejuta Risiko)</b>",
+        "booth_3": "Booth 3: <b>Non-Communicable Diseases (Cegah Hari Ini, Sihat Esok Hari!)</b>",
+        "booth_4": "Booth 4: <b>Kahoot! Quiz and \"Say No to Vape\" Pledge</b>",
+        "booth_5": "Booth 5: <b>MOOC Counter</b>",
+        "booth_6": "Booth 6: <b>Health Screening by National Cancer Society Malaysia (NCSM)</b>",
+        "booth_7": "Booth 7: <b>Basic Life Support (BLS)</b>"
+      }
+    },
+    "majlis_penutup": {
+      "masa": "1.00 petang – 2.00 petang",
+      "aktiviti": "Majlis Penutup",
+      "items": {
+        "cabutan_bertuah": "Cabutan Bertuah",
+        "ucapan_penutup": "Ucapan Penutup oleh Majlis Perwakilan Pelajar (MPP)",
+        "sesi_bergambar": "Sesi Bergambar"
+      }
+    },
+    "sesi_makan_tengahari_vip": {
+      "masa": "2.00 petang",
+      "aktiviti": "Sesi Makan Tengahari untuk VIP",
+      "items": {}
+    }
+  },
+  "tentatif_program.tab.group_b.masa": "Masa",
+  "tentatif_program.tab.group_b.aktiviti": "Aktiviti",
+  "tentatif_program.tab.group_b.items": {
+    "daftar_peserta_ketibaan_vip": {
+      "masa": "7.30 pagi – 8.00 pagi",
+      "aktiviti": "Daftar peserta dan ketibaan VIP",
+      "items": {}
+    },
+    "saringan_kesihatan": {
+      "masa": "8.00 pagi – 2.00 petang",
+      "aktiviti": "Saringan Kesihatan",
+      "items": {}
+    }
+  }
+}
