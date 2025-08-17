@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="bg-base-100 shadow-sm sticky top-0 z-10">
       <div className="navbar container mx-auto px-4">
-        <div className="navbar-start">
+        <div className="navbar-start w-[700px]">
           <Link to="/" className="w-16 md:w-20">
             <img src="/images/logo.webp" alt="logo" />
           </Link>
@@ -44,13 +44,13 @@ export default function Header() {
                 <a>{content['header.program_kami']}</a>
                 <ul className="p-2">
                   <li>
-                    <Link to="/program-kami/forum-breathe-well-live-well">
+                    <a href="#forum">
                       {
                         content[
                           'header.program_kami.forum_breathe_well_live_well'
                         ]
                       }
-                    </Link>
+                    </a>
                   </li>
                   <li>
                     <Link to="/program-kami/pameran-kesihatan">
@@ -77,13 +77,13 @@ export default function Header() {
                 <summary>{content['header.program_kami']}</summary>
                 <ul className="p-2 w-48">
                   <li>
-                    <Link to="/program-kami/forum-breathe-well-live-well">
+                    <a href="#forum">
                       {
                         content[
                           'header.program_kami.forum_breathe_well_live_well'
                         ]
                       }
-                    </Link>
+                    </a>
                   </li>
                   <li>
                     <Link to="/program-kami/pameran-kesihatan">

@@ -8,8 +8,8 @@ const images = Array(9)
 
 export default function Sponsors() {
   return (
-    <div className="container mx-auto px-4 pt-8 pb-8">
-      <h2 className="text-xl md:text-3xl font-bold mb-4">
+    <div className="container mx-auto px-4 my-16">
+      <h2 className="text-center text-xl md:text-3xl font-bold mb-4">
         {content['kolaborasi.kolaborasi']}
       </h2>
 
