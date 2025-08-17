@@ -31,7 +31,7 @@ const generateTableContent = (group: 'A' | 'B') => {
 
 export default function Tentative() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 pt-8">
       <h2 className="text-xl md:text-3xl font-bold mb-4">
         {content['tentatif_program.tentative_program']}
       </h2>
@@ -47,7 +47,7 @@ export default function Tentative() {
           <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
             <table className="table">
               <thead>
-                <tr>
+                <tr className="md:text-lg">
                   <th className="hidden md:block">
                     {content['tentatif_program.tab.group_a.masa']}
                   </th>
