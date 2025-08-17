@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import ForumPanelist from '@/components/ForumPanelist'
 
 export const Route = createFileRoute(
   '/program-kami/forum-breathe-well-live-well/',
@@ -7,5 +8,9 @@ export const Route = createFileRoute(
 })
 
 function RouteComponent() {
-  return <div>Hello "/program-kami/forum-breathe-well-live-well/"!</div>
+  return (
+    <main>
+      <ForumPanelist />
+    </main>
+  )
 }

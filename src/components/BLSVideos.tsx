@@ -7,7 +7,7 @@ export default function BLSVideos() {
           src="https://placehold.co/900x400"
           alt="https://placehold.co/900x400"
         />
-      </div>{' '}
+      </div>
       <div className="w-full flex gap-8">
         <img
           className="w-full h-full object-fill border border-primary"

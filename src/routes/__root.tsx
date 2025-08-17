@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 
 export const Route = createRootRoute({
   component: () => (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header />
       <Outlet />
       <Footer />
@@ -22,6 +22,6 @@ export const Route = createRootRoute({
           },
         ]}
       />
-    </>
+    </div>
   ),
 })
