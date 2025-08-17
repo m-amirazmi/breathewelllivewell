@@ -1,9 +1,16 @@
 import { createFileRoute } from '@tanstack/react-router'
+import PameranKesihatanPosters from '@/components/PameranKesihatanPosters'
+import PameranKesihatanFlipbook from '@/components/PameranKesihatanFlipbook'
 
 export const Route = createFileRoute('/program-kami/pameran-kesihatan/')({
   component: RouteComponent,
 })
 
 function RouteComponent() {
-  return <div>Hello "/program-kami/pameran-kesihatan/"!</div>
+  return (
+    <main>
+      <PameranKesihatanPosters />
+      <PameranKesihatanFlipbook />
+    </main>
+  )
 }

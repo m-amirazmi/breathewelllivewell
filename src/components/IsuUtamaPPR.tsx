@@ -6,9 +6,9 @@ const isuPPR = Object.values(content['isu_utama.isu_utama_ppr_bbh.items']).map(
       <div className="card w-full md:w-1/3 bg-base-100 shadow-sm">
         <div className="card-body">
           <div className="flex justify-between">
-            <h3 className="text-2xl font-bold">{isu.title}</h3>
+            <h3 className="text-lg md:text-2xl font-bold">{isu.title}</h3>
           </div>
-          <ul className="mt-2 flex flex-col gap-2 text-lg">
+          <ul className="mt-2 flex flex-col gap-2 md:text-lg">
             {Object.values(isu.statements).map((statement) => (
               <li>"{statement}"</li>
             ))}

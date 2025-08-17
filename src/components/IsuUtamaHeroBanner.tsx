@@ -1,8 +1,8 @@
 export default function IsuUtamaHeroBanner() {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-col md:flex-row">
       <div
-        className="w-1/2 cursor-pointer"
+        className="md:w-1/2 cursor-pointer"
         onClick={() => (document.getElementById('one') as any)?.showModal()}
       >
         <img
@@ -12,7 +12,7 @@ export default function IsuUtamaHeroBanner() {
         />
       </div>
       <div
-        className="w-1/2 cursor-pointer"
+        className="md:w-1/2 cursor-pointer"
         onClick={() => (document.getElementById('one') as any)?.showModal()}
       >
         <img
