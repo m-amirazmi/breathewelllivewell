@@ -5,5 +5,5 @@ export const Route = createFileRoute('/isu-utama/')({
 })
 
 function RouteComponent() {
-  return <div>Hello "/main-issue/"!</div>
+  return <div>Hello "/isu-utama/"!</div>
 }

@@ -1,107 +1,116 @@
-import { Link } from "@tanstack/react-router";
-import { ChevronDown, ChevronUp, Menu } from "lucide-react";
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import { Button } from "./ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
+import { Link } from '@tanstack/react-router'
+import content from '@/content.json'
 
 export default function Header() {
-  const { t } = useTranslation();
-  const [openMobileMenu, setOpenMobileMenu] = useState(false);
-  const [openMobileDropdown, setOpenMobileDropdown] = useState(false);
-
   return (
-    <header className="bg-[#E9DFD6] text-black ">
-      <div className="px-4 py-2">
-        <div className="relative container mx-auto flex gap-2 justify-between items-center">
-          <Link to="/">
-            <img
-              src="/assets/images/logo.png"
-              className="h-16 w-16 inline-block"
-              alt="Logo"
-            />
+    <header className="bg-base-100 shadow-sm">
+      <div className="navbar container mx-auto px-4">
+        <div className="navbar-start w-7xl">
+          <Link to="/" className="w-16 md:w-20">
+            <img src="/images/logo.webp" alt="logo" />
           </Link>
-          <nav className=" gap-8 items-center hidden md:flex">
-            <Link to="/isu-utama">{t("header.main_issue")}</Link>
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1">
-                <span>{t("header.our_programs.title")}</span>
-                <ChevronDown size={16} />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <DropdownMenuItem>
-                  <Link to="/program-kami/forum-breathe-well-live-well">
-                    {t("header.our_programs.forum_breathe_well_live_well")}
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link to="/program-kami/pameran-kesihatan">
-                    {t("header.our_programs.health_exhibitions")}
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link to="/program-kami/bls">
-                    {t("header.our_programs.basic_life_support")}
-                  </Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-            <Link to="/hebahan">{t("header.announcements")}</Link>
-          </nav>
-
-          <Button
-            variant="outline"
-            className="md:hidden text-[#623726]"
-            onClick={() => setOpenMobileMenu(!openMobileMenu)}
+          <a
+            target="_blank"
+            className="btn btn-neutral md:hidden ml-auto btn-sm"
+            href="https://forms.gle/GCh7CD5j8cgNxscu9"
           >
-            <Menu />
-          </Button>
-        </div>
-      </div>
-
-      {openMobileMenu && (
-        <div className="absolute md:hidden bg-neutral-700 text-white w-full h-fit">
-          <div className="flex flex-col items-center gap-4 py-4 group:border-b">
-            <Link to="/isu-utama">{t("header.main_issue")}</Link>
-            {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-            <button
-              className="flex items-center gap-1"
-              onClick={() => setOpenMobileDropdown(!openMobileDropdown)}
+            {content['header.borang_soal_selidik_pra_program']}
+          </a>
+          <div className="dropdown dropdown-end">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {' '}
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />{' '}
+              </svg>
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <span>{t("header.our_programs.title")}</span>
-              {!openMobileDropdown && <ChevronDown size={16} />}
-              {openMobileDropdown && <ChevronUp size={16} />}
-            </button>
-            {openMobileDropdown && (
-              <>
-                <div>
-                  <Link to="/program-kami/forum-breathe-well-live-well">
-                    {t("header.our_programs.forum_breathe_well_live_well")}
-                  </Link>
-                </div>
-                <div>
-                  <Link to="/program-kami/pameran-kesihatan">
-                    {t("header.our_programs.health_exhibitions")}
-                  </Link>
-                </div>
-                <div>
-                  <Link to="/program-kami/bls">
-                    {t("header.our_programs.basic_life_support")}
-                  </Link>
-                </div>
-              </>
-            )}
-            <Link to="/hebahan">{t("header.announcements")}</Link>
+              <li>
+                <Link to="/isu-utama">{content['header.isu_utama']}</Link>
+              </li>
+              <li>
+                <a>{content['header.program_kami']}</a>
+                <ul className="p-2">
+                  <li>
+                    <Link to="/program-kami/forum-breathe-well-live-well">
+                      {
+                        content[
+                          'header.program_kami.forum_breathe_well_live_well'
+                        ]
+                      }
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/program-kami/pameran-kesihatan">
+                      {content['header.program_kami.pameran_kesihatan']}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/program-kami/sesi-bantuan-hidup-asas">
+                      {content['header.program_kami.sesi_bantuan_hidup_asas']}
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-      )}
-      {/* <Button onClick={() => i18n.changeLanguage('ms')}>Switch to MY</Button>
-      <Button onClick={() => i18n.changeLanguage('en')}>Switch to EN</Button> */}
+        <div className="navbar-end hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 items-center gap-1">
+            <li>
+              <Link to="/isu-utama">{content['header.isu_utama']}</Link>
+            </li>
+            <li>
+              <details>
+                <summary>{content['header.program_kami']}</summary>
+                <ul className="p-2 w-48">
+                  <li>
+                    <Link to="/program-kami/forum-breathe-well-live-well">
+                      {
+                        content[
+                          'header.program_kami.forum_breathe_well_live_well'
+                        ]
+                      }
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/program-kami/pameran-kesihatan">
+                      {content['header.program_kami.pameran_kesihatan']}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/program-kami/sesi-bantuan-hidup-asas">
+                      {content['header.program_kami.sesi_bantuan_hidup_asas']}
+                    </Link>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                className="btn btn-neutral"
+                href="https://forms.gle/GCh7CD5j8cgNxscu9"
+              >
+                {content['header.borang_soal_selidik_pra_program']}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-  );
+  )
 }
