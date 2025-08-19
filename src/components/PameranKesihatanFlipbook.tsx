@@ -1,7 +1,7 @@
 export default function PameranKesihatanFlipbook() {
   return (
     <div className="container mx-auto px-4 flex flex-col gap-8 pb-8">
-      <div className="w-full h-screen flex gap-8">
+      <div className="w-full h-screen flex gap-8 p-4 border border-accent-content rounded-2xl">
         <iframe
           src="https://simplebooklet.com/cegahhariinisihatesokhari"
           title="Simplebooklet Viewer"
@@ -9,6 +9,7 @@ export default function PameranKesihatanFlipbook() {
           height="100%"
           frameBorder="0"
           allowFullScreen
+          className="rounded-xl"
         />
       </div>
     </div>
