@@ -123,9 +123,9 @@ export default function BLSVideos() {
           <h3 className="md:text-lg underline font-semibold mb-2">
             Langkah - langkah CPR
           </h3>
-          <div className="w-full flex-1 aspect-video">
+          <div className="h-64 md:h-auto w-full flex-1 aspect-video">
             <iframe
-              className="aspect-video w-full rounded-xl"
+              className="md:aspect-video h-64 md:h-auto w-full rounded-xl"
               src="https://www.youtube.com/embed/Ikxzq58A5OQ?si=JzdoUa0OugUsB6sH"
               title="YouTube video player"
               frameBorder="0"
@@ -148,9 +148,9 @@ export default function BLSVideos() {
           </h3>
           <div>
             <div>
-              <div className="w-full flex-1 aspect-video">
+              <div className="h-64 md:h-auto w-full flex-1 aspect-video">
                 <iframe
-                  className="aspect-video w-full rounded-xl"
+                  className="md:aspect-video h-64 md:h-auto w-full rounded-xl"
                   src="https://www.youtube.com/embed/q6XBnWVKT4g?si=iOvDfiD5TwUih8d_"
                   title="YouTube video player"
                   frameBorder="0"
