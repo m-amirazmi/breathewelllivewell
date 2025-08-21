@@ -96,29 +96,7 @@ export default function BLSVideos() {
           </div>
         </div>
       </div>
-      <div>
-        <h3 className="md:text-lg underline font-semibold mb-2">
-          Langkah - langkah CPR
-        </h3>
-        <div className="w-full flex-1 aspect-video">
-          <iframe
-            className="aspect-video rounded-xl"
-            src="https://www.youtube.com/embed/Ikxzq58A5OQ?si=JzdoUa0OugUsB6sH"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div className="w-full mt-8">
-          <img
-            className="w-full rounded-xl"
-            src="/images/cpr.webp"
-            alt="/images/cpr.webp"
-          />
-        </div>
-      </div>
+
       <div className="card shadow-sm bg-white">
         <div className="card-body md:text-lg">
           <h2 className="text-lg md:text-xl font-semibold mb-2">
@@ -139,27 +117,57 @@ export default function BLSVideos() {
           </p>
         </div>
       </div>
-      <div>
-        <h3 className="md:text-lg underline font-semibold mb-2">
-          Langkah - langkah
-        </h3>
-        <div className="w-full flex-1 aspect-video">
-          <iframe
-            className="aspect-video rounded-xl"
-            src="https://www.youtube.com/embed/q6XBnWVKT4g?si=iOvDfiD5TwUih8d_"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+
+      <div className="flex flex-col md:flex-row gap-8 md:gap-6">
+        <div className="md:w-1/2">
+          <h3 className="md:text-lg underline font-semibold mb-2">
+            Langkah - langkah CPR
+          </h3>
+          <div className="w-full flex-1 aspect-video">
+            <iframe
+              className="aspect-video rounded-xl"
+              src="https://www.youtube.com/embed/Ikxzq58A5OQ?si=JzdoUa0OugUsB6sH"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="w-full mt-8">
+            <img
+              className="w-full rounded-xl"
+              src="/images/cpr.webp"
+              alt="/images/cpr.webp"
+            />
+          </div>
         </div>
-        <div className="w-full mt-8">
-          <img
-            className="w-full rounded-xl"
-            src="/images/heimlich.webp"
-            alt="/images/heimlich.webp"
-          />
+        <div className="md:w-1/2">
+          <h3 className="md:text-lg underline font-semibold mb-2">
+            Langkah - langkah Heimlich
+          </h3>
+          <div>
+            <div>
+              <div className="w-full flex-1 aspect-video">
+                <iframe
+                  className="aspect-video rounded-xl"
+                  src="https://www.youtube.com/embed/q6XBnWVKT4g?si=iOvDfiD5TwUih8d_"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="w-full mt-8">
+                <img
+                  className="w-full rounded-xl"
+                  src="/images/heimlich.webp"
+                  alt="/images/heimlich.webp"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
