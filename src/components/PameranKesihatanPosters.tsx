@@ -4,23 +4,23 @@ export default function PameranKesihatanPosters() {
   return (
     <div className="container mx-auto flex flex-col-reverse gap-4 md:gap-8 py-8">
       <div>
-        <h2 className="text-xl md:text-2xl font-semibold mb-2 px-8">Poster</h2>
+        <h2 className="text-xl md:text-2xl font-semibold mb-2 px-6">Poster</h2>
         <div className="w-full flex flex-wrap">
-          <div className="w-full md:w-1/3 px-8 pb-8 md:py-0">
+          <div className="w-full md:w-1/3 px-6 pb-8 md:py-0">
             <img
               className="w-full rounded-xl"
               src="/images/one.webp"
               alt="/images/one.webp"
             />
           </div>
-          <div className="w-full md:w-1/3 px-8 pb-8 md:py-0">
+          <div className="w-full md:w-1/3 px-6 pb-8 md:py-0">
             <img
               className="w-full rounded-xl"
               src="/images/two.webp"
               alt="/images/two.webp"
             />
           </div>
-          <div className="w-full md:w-1/3 px-8 pb-8 md:py-0">
+          <div className="w-full md:w-1/3 px-6 pb-8 md:py-0">
             <img
               className="w-full rounded-xl"
               src="/images/three.webp"
@@ -30,10 +30,10 @@ export default function PameranKesihatanPosters() {
         </div>
       </div>
       <div>
-        <h2 className="text-xl md:text-2xl font-semibold mb-2 px-8">
+        <h2 className="text-xl md:text-2xl font-semibold mb-2 px-6">
           Kualiti Udara Dalaman
         </h2>
-        <div className="w-full flex-1 px-8">
+        <div className="w-full flex-1 px-6">
           <video
             className="w-full aspect-video rounded-xl"
             controls
@@ -48,7 +48,7 @@ export default function PameranKesihatanPosters() {
           </video>
         </div>
       </div>
-      <h1 className="text-2xl md:text-3xl font-semibold px-8">
+      <h1 className="text-2xl md:text-3xl font-semibold px-6">
         Pameran Kesihatan
       </h1>
     </div>

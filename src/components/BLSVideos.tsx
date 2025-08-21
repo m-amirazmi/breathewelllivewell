@@ -1,6 +1,6 @@
 export default function BLSVideos() {
   return (
-    <div className="container mx-auto px-8 flex flex-col py-8 gap-6 md:gap-8">
+    <div className="container mx-auto px-6 flex flex-col py-8 gap-6 md:gap-8">
       <div>
         <h1 className="text-2xl md:text-3xl font-semibold mb-2">
           Bantuan Hidup Asas | Basic Life Support (BLS)
