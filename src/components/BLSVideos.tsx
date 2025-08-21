@@ -125,7 +125,7 @@ export default function BLSVideos() {
           </h3>
           <div className="w-full flex-1 aspect-video">
             <iframe
-              className="aspect-video rounded-xl"
+              className="aspect-video w-full rounded-xl"
               src="https://www.youtube.com/embed/Ikxzq58A5OQ?si=JzdoUa0OugUsB6sH"
               title="YouTube video player"
               frameBorder="0"
@@ -150,7 +150,7 @@ export default function BLSVideos() {
             <div>
               <div className="w-full flex-1 aspect-video">
                 <iframe
-                  className="aspect-video rounded-xl"
+                  className="aspect-video w-full rounded-xl"
                   src="https://www.youtube.com/embed/q6XBnWVKT4g?si=iOvDfiD5TwUih8d_"
                   title="YouTube video player"
                   frameBorder="0"
