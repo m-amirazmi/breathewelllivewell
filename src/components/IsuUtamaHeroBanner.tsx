@@ -1,24 +1,24 @@
 export default function IsuUtamaHeroBanner() {
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="container mx-auto px-6 flex flex-col md:flex-row">
       <div
         className="md:w-1/2 cursor-pointer"
         onClick={() => (document.getElementById('one') as any)?.showModal()}
       >
         <img
-          className="w-full h-full border border-primary"
-          src="https://placehold.co/500x400"
-          alt="https://placehold.co/500x400"
+          className="w-full h-full"
+          src="/images/banner_left.webp"
+          alt="/images/banner_left.webp"
         />
       </div>
       <div
         className="md:w-1/2 cursor-pointer"
-        onClick={() => (document.getElementById('one') as any)?.showModal()}
+        onClick={() => (document.getElementById('two') as any)?.showModal()}
       >
         <img
-          className="w-full h-full border border-primary"
-          src="https://placehold.co/500x400"
-          alt="https://placehold.co/500x400"
+          className="w-full h-full"
+          src="/images/banner_right.webp"
+          alt="/images/banner_right.webp"
         />
       </div>
 
@@ -31,7 +31,7 @@ export default function IsuUtamaHeroBanner() {
           </form>
           <img
             className="w-full h-full"
-            src="https://placehold.co/500x400"
+            src="/images/banner_left_popup.webp"
             alt="https://placehold.co/500x400"
           />
         </div>
@@ -45,7 +45,7 @@ export default function IsuUtamaHeroBanner() {
           </form>
           <img
             className="w-full h-full"
-            src="https://placehold.co/500x400"
+            src="/images/banner_right_popup.webp"
             alt="https://placehold.co/500x400"
           />
         </div>
