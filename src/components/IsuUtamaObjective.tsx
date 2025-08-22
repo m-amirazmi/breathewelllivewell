@@ -1,6 +1,6 @@
 export default function IsuUtamaOjective() {
   return (
-    <div className="container mx-auto px-4 pt-8 mb-8 md:text-lg flex flex-col md:flex-row gap-8">
+    <div className="container mx-auto px-6 pt-8 mb-8 md:text-lg flex flex-col md:flex-row gap-8">
       <div className="w-full md:w-1/2 card bg-white card-md shadow-sm">
         <div className="card-body">
           <h2 className="text-xl md:text-2xl font-bold">Objektif Umum</h2>
