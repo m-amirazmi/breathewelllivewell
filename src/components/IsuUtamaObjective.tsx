@@ -3,8 +3,8 @@ export default function IsuUtamaOjective() {
     <div className="container mx-auto px-4 pt-8 mb-8 md:text-lg flex flex-col md:flex-row gap-8">
       <div className="w-full md:w-1/2 card bg-white card-md shadow-sm">
         <div className="card-body">
-          <h2 className="text-xl md:text-2xl font-bold mb-4">Objektif Umum</h2>
-          <ul className="text-lg list-disc ml-5">
+          <h2 className="text-xl md:text-2xl font-bold">Objektif Umum</h2>
+          <ul className="md:text-lg list-disc ml-5">
             <li>
               Untuk meningkatkan kesedaran dan mendidik komuniti mengenai
               kepentingan kualiti udara dalam rumah dalam mengekalkan kesihatan
@@ -21,10 +21,8 @@ export default function IsuUtamaOjective() {
       </div>
       <div className="w-full md:w-1/2 card bg-white card-md shadow-sm">
         <div className="card-body">
-          <h2 className="text-xl md:text-2xl font-bold mb-4">
-            Objektif Spesifik
-          </h2>
-          <ul className="text-lg list-disc ml-5">
+          <h2 className="text-xl md:text-2xl font-bold">Objektif Spesifik</h2>
+          <ul className="md:text-lg list-disc ml-5">
             <li>
               Untuk menilai tahap pengetahuan dan kesedaran komuniti mengenai
               bahaya penggunaan vape.

@@ -23,7 +23,7 @@ export default function IsuUtamaHeroBanner() {
       </div>
 
       <dialog id="one" className="modal">
-        <div className="modal-box max-w-[800px] w-[800px] ">
+        <div className="modal-box max-w-[800px]">
           <form method="dialog">
             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
               ✕
@@ -35,9 +35,12 @@ export default function IsuUtamaHeroBanner() {
             alt="https://placehold.co/500x400"
           />
         </div>
+        <form method="dialog" className="modal-backdrop">
+          <button>close</button>
+        </form>
       </dialog>
       <dialog id="two" className="modal">
-        <div className="modal-box max-w-[800px] w-[800px] ">
+        <div className="modal-box max-w-[800px]">
           <form method="dialog">
             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
               ✕
@@ -49,6 +52,9 @@ export default function IsuUtamaHeroBanner() {
             alt="https://placehold.co/500x400"
           />
         </div>
+        <form method="dialog" className="modal-backdrop">
+          <button>close</button>
+        </form>
       </dialog>
     </div>
   )
