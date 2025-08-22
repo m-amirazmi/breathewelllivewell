@@ -1,4 +1,5 @@
 import { ChevronLeft, ChevronRight, X } from 'lucide-react'
+import { useState } from 'react'
 
 const bannerOne = [
   {
@@ -27,6 +28,56 @@ const bannerTwo = [
 ]
 
 export default function IsuUtamaHeroBanner() {
+  const [currentOne, setCurrentOne] = useState(1)
+  const [currentOneNext, setCurrentOneNext] = useState(2)
+  const [currentOnePrev, setCurrentOnePrev] = useState(2)
+  const [currentTwo, setCurrentTwo] = useState(1)
+  const [currentTwoNext, setCurrentTwoNext] = useState(2)
+  const [currentTwoPrev, setCurrentTwoPrev] = useState(2)
+
+  const handleOne = () => {
+    switch (currentOne) {
+      case 1:
+        setCurrentOneNext(2)
+        setCurrentOnePrev(2)
+        setCurrentOne(2)
+        break
+
+      case 2:
+        setCurrentOneNext(1)
+        setCurrentOnePrev(1)
+        setCurrentOne(1)
+        break
+
+      default:
+        break
+    }
+  }
+  const handleTwo = () => {
+    switch (currentTwo) {
+      case 1:
+        setCurrentTwoNext(2)
+        setCurrentTwoPrev(3)
+        setCurrentTwo(2)
+        break
+
+      case 2:
+        setCurrentTwoNext(3)
+        setCurrentTwoPrev(1)
+        setCurrentTwo(3)
+        break
+
+      case 3:
+        setCurrentTwoNext(1)
+        setCurrentTwoPrev(2)
+        setCurrentTwo(1)
+        break
+
+      default:
+        break
+    }
+  }
+
   return (
     <div className="container mx-auto px-6 flex flex-col md:flex-row">
       <div
@@ -60,35 +111,46 @@ export default function IsuUtamaHeroBanner() {
                 className="carousel-item relative w-full"
               >
                 <img src={b1.imageUrl} className="w-full object-contain" />
-                <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                  <a href={`#item-b1-${b1.prev}`} className="btn btn-circle">
-                    <ChevronLeft />
-                  </a>
-                  <a href={`#item-b1-${b1.next}`} className="btn btn-circle">
-                    <ChevronRight />
-                  </a>
-                </div>
               </div>
             ))}
           </div>
-          <div className="flex w-full items-center justify-center gap-2 py-2">
-            {bannerOne.map((b1) => (
-              <a key={b1.id} href={`#item-b1-${b1.id}`} className="btn btn-xs">
-                {b1.id}
-              </a>
-            ))}
-            <form method="dialog">
-              <button className="btn btn-xs btn-active btn-ghost flex items-center">
-                Close <X size={14} />
-              </button>
-            </form>
+          <div className="flex w-full items-center justify-between p-4">
+            <a
+              href={`#item-b1-${currentOnePrev}`}
+              className="btn btn-circle btn-sm"
+              onClick={handleOne}
+            >
+              <ChevronLeft />
+            </a>
+            <div className="flex gap-2">
+              {bannerOne.map((b1) => (
+                <a
+                  key={b1.id}
+                  href={`#item-b1-${b1.id}`}
+                  className="btn btn-sm"
+                >
+                  {b1.id}
+                </a>
+              ))}
+              <form method="dialog">
+                <button className="btn btn-sm btn-active btn-ghost flex items-center">
+                  Close <X size={14} />
+                </button>
+              </form>
+            </div>
+            <a
+              href={`#item-b1-${currentOneNext}`}
+              className="btn btn-circle btn-sm"
+              onClick={handleOne}
+            >
+              <ChevronRight />
+            </a>
           </div>
         </div>
         <form method="dialog" className="modal-backdrop">
           <button>close</button>
         </form>
       </dialog>
-
       <dialog id="two" className="modal">
         <div className="modal-box max-w-[500px] bg-white p-0">
           <div className="carousel w-full">
@@ -99,28 +161,40 @@ export default function IsuUtamaHeroBanner() {
                 className="carousel-item relative w-full"
               >
                 <img src={b2.imageUrl} className="w-full object-contain" />
-                <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                  <a href={`#item-b2-${b2.prev}`} className="btn btn-circle">
-                    <ChevronLeft />
-                  </a>
-                  <a href={`#item-b2-${b2.next}`} className="btn btn-circle">
-                    <ChevronRight />
-                  </a>
-                </div>
               </div>
             ))}
           </div>
-          <div className="flex w-full items-center justify-center gap-2 py-2">
-            {bannerTwo.map((b2) => (
-              <a key={b2.id} href={`#item-b2-${b2.id}`} className="btn btn-xs">
-                {b2.id}
-              </a>
-            ))}
-            <form method="dialog">
-              <button className="btn btn-xs btn-active btn-ghost flex items-center">
-                Close <X size={14} />
-              </button>
-            </form>
+          <div className="flex w-full items-center justify-between p-4">
+            <a
+              href={`#item-b2-${currentTwoPrev}`}
+              className="btn btn-circle btn-sm"
+              onClick={handleTwo}
+            >
+              <ChevronLeft />
+            </a>
+            <div className="flex gap-2">
+              {bannerTwo.map((b2) => (
+                <a
+                  key={b2.id}
+                  href={`#item-b2-${b2.id}`}
+                  className="btn btn-sm"
+                >
+                  {b2.id}
+                </a>
+              ))}
+              <form method="dialog">
+                <button className="btn btn-sm btn-active btn-ghost flex items-center">
+                  Close <X size={14} />
+                </button>
+              </form>
+            </div>
+            <a
+              href={`#item-b2-${currentTwoNext}`}
+              className="btn btn-circle btn-sm"
+              onClick={handleTwo}
+            >
+              <ChevronRight />
+            </a>
           </div>
         </div>
         <form method="dialog" className="modal-backdrop">
